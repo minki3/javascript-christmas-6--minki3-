@@ -13,5 +13,8 @@ const OutputView = {
   printPrice(price) {
     Console.print(`${price}원`);
   },
+  printNotThing() {
+    Console.print("없음");
+  },
 };
 export default OutputView;
