@@ -49,7 +49,7 @@ class App {
       specialEventResult,
       presentation
     );
-    benefitAmountOutput();
+    benefitAmountOutput(eventDiscountResult);
   }
 }
 
