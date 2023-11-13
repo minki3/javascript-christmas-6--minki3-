@@ -13,6 +13,9 @@ import eventDiscount from "./eventDiscount.js";
 import lastPrice from "./lastPrice.js";
 import benefitDetailsOutput from "./benefitDetailsOutput.js";
 import benefitAmountOutput from "./benefitAmountOutput.js";
+import actualAmountOutput from "./actualAmountOutput.js";
+import badge from "./badge.js";
+import badgeOutput from "./badgeOutput.js";
 
 class App {
   async run() {
@@ -38,6 +41,7 @@ class App {
       weekendEventResult,
       specialEventResult
     );
+    const badgeResult = badge(eventDiscountResult);
 
     menuOutput(menu);
     regularPriceOutput(regularPriceResult);
@@ -50,6 +54,8 @@ class App {
       presentation
     );
     benefitAmountOutput(eventDiscountResult);
+    actualAmountOutput(lastPriceResult);
+    badgeOutput(badgeResult);
   }
 }
 

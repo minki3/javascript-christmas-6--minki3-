@@ -19,5 +19,8 @@ const OutputView = {
   printEventPrice(input, price) {
     Console.print(`${input} : -${price}원`);
   },
+  printBadge(badge) {
+    Console.print(`${badge}`);
+  },
 };
 export default OutputView;
