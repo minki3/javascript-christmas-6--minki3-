@@ -9,6 +9,7 @@ import christmasEvent from "./christmasEvent.js";
 import weekDayEvent from "./weekDayEvent.js";
 import weekendEvent from "./weekendEvent.js";
 import specialEvent from "./specialEvent.js";
+import eventDiscount from "./eventDiscount.js";
 
 class App {
   async run() {
@@ -20,10 +21,27 @@ class App {
     regularPriceOutput(regularPriceResult);
     presentationEventOutput(presentation);
 
-    console.log(christmasEvent(date, regularPriceResult));
-    console.log(weekDayEvent(date, regularPriceResult, menu));
-    console.log(weekendEvent(date, regularPriceResult, menu));
-    console.log(specialEvent(date, regularPriceResult));
+    const christmasEventResult = christmasEvent(date, regularPriceResult);
+    const weekDayEventResult = weekDayEvent(date, regularPriceResult, menu);
+    const weekendEventResult = weekendEvent(date, regularPriceResult, menu);
+    const specialEventResult = specialEvent(date, regularPriceResult);
+
+    eventDiscount(
+      christmasEventResult,
+      weekDayEventResult,
+      weekendEventResult,
+      specialEventResult,
+      presentation
+    );
+    console.log(
+      eventDiscount(
+        christmasEventResult,
+        weekDayEventResult,
+        weekendEventResult,
+        specialEventResult,
+        presentation
+      )
+    );
   }
 }
 
