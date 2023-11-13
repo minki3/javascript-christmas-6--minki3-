@@ -1,8 +1,10 @@
 import InputView from "./InputView.js";
+import dateInputVerification from "./DateInputVerification.js";
+
 class App {
   async run() {
-    console.log(await InputView.DateInput());
-    // await inputView.readDate();
+    const date = await InputView.DateInput();
+    dateInputVerification(date);
   }
 }
 
