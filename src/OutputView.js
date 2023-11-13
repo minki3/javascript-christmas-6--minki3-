@@ -16,5 +16,8 @@ const OutputView = {
   printNotThing() {
     Console.print("없음");
   },
+  printEventPrice(input, price) {
+    Console.print(`${input} : -${price}원`);
+  },
 };
 export default OutputView;

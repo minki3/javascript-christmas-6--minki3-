@@ -3,6 +3,6 @@ export default function christmasEvent(date, price) {
   if (date <= 25 && price >= 10000) {
     result = 1000 + (date - 1) * 100;
   }
-  if (date > 25) return null;
+  if (date > 25) return 0;
   return result;
 }
