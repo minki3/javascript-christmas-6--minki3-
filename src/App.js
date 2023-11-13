@@ -5,6 +5,8 @@ import regularPrice from "./regularPrice.js";
 import regularPriceOutput from "./regularPriceOutput.js";
 import presentationEvent from "./presentationEvent.js";
 import presentationEventOutput from "./presentationEventOutput.js";
+import christmasEvent from "./christmasEvent.js";
+import weekDayEvent from "./weekDayEvent.js";
 
 class App {
   async run() {
@@ -15,6 +17,9 @@ class App {
     menuOutput(menu);
     regularPriceOutput(regularPriceResult);
     presentationEventOutput(presentation);
+
+    console.log(christmasEvent(date, regularPriceResult));
+    console.log(weekDayEvent(date, regularPriceResult, menu));
   }
 }
 
