@@ -1,4 +1,4 @@
-import dateInputRetry from "../src/dateInputRetry";
+import dateInputRetry from "../src/dateInputRetry.js";
 import InputView from "../src/InputView.js";
 import dateInputVerification from "../src/DateInputVerification.js";
 import OutputView from "../src/OutputView.js";

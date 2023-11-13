@@ -1,4 +1,4 @@
-import compareMenu from "../src/compareMenu";
+import compareMenu from "../src/compareMenu.js";
 
 describe("메뉴판에 없는 메뉴를 주문했을 경우 테스트", () => {
   it("메뉴판에 없는 메뉴를 주문했을 경우 예외 테스트", () => {

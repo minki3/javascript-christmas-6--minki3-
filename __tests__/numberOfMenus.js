@@ -1,4 +1,4 @@
-import numberOfMenus from "../src/numberOfMenus";
+import numberOfMenus from "../src/numberOfMenus.js";
 
 describe("입력 갯수 테스트", () => {
   it("1미만 일 때", () => {

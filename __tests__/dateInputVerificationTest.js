@@ -1,4 +1,4 @@
-import dateInputVerification from "../src/DateInputVerification";
+import dateInputVerification from "../src/DateInputVerification.js";
 
 describe("날짜 입력 예외 테스트", () => {
   it("정상 입력시 ", () => {

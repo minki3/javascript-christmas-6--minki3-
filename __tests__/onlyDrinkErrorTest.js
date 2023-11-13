@@ -1,4 +1,4 @@
-import onlyDrinkError from "../src/onlyDrinkError";
+import onlyDrinkError from "../src/onlyDrinkError.js";
 
 describe("메뉴선택에서 음료만 있을 경우 테스트", () => {
   it("음료만 있을 경우 예외 처리", () => {
