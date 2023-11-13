@@ -12,13 +12,13 @@ describe("날짜 입력 예외 테스트", () => {
 
       expect(() => {
         dateInputVerification(number);
-      }).toThrow("[ERROR] : 숫자의 범위는 1 ~ 31까지 입니다.");
+      }).toThrow("[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.");
     }),
     it("31 초과 일시 ", () => {
       const number = 32;
 
       expect(() => {
         dateInputVerification(number);
-      }).toThrow("[ERROR] : 숫자의 범위는 1 ~ 31까지 입니다.");
+      }).toThrow("[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.");
     });
 });

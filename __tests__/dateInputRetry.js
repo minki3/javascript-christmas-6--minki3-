@@ -20,7 +20,9 @@ describe("날짜 잘못 입력시 함수 input 호출 테스트", () => {
     );
     dateInputVerification
       .mockImplementationOnce(() => {
-        throw new Error("[ERROR] : 숫자를 입력해주세요");
+        throw new Error(
+          "[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요."
+        );
       })
       .mockImplementationOnce(() => 10);
 
@@ -29,7 +31,7 @@ describe("날짜 잘못 입력시 함수 input 호출 테스트", () => {
     expect(InputView.DateInput).toHaveBeenCalledTimes(2);
     expect(dateInputVerification).toHaveBeenCalledTimes(2);
     expect(OutputView.printError).toHaveBeenCalledWith(
-      new Error("[ERROR] : 숫자를 입력해주세요")
+      new Error("[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.")
     );
   });
 });

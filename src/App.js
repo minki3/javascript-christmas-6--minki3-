@@ -5,6 +5,7 @@ class App {
   async run() {
     const date = await dateInputRetry();
     const menu = await menuInputRetry();
+    console.log(menu);
   }
 }
 
