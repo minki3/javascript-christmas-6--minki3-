@@ -1,13 +1,9 @@
 import compareMenu from "./compareMenu.js";
+import menuObject from "./menuObject.js";
+import numberOfMenus from "./numberOfMenus.js";
 
 export default function menuVerification(menu) {
-  let result = {};
-  const array = menu.split(",");
-  array
-    .map((item) => item.split("-"))
-    .forEach((item) => {
-      result[item[0]] = Number(item[1]);
-    });
-
-  compareMenu(result);
+  const menuList = menuObject(menu);
+  compareMenu(menuList);
+  numberOfMenus(menuList);
 }
