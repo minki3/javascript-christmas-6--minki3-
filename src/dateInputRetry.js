@@ -1,6 +1,7 @@
 import dateInputVerification from "./DateInputVerification.js";
 import InputView from "./InputView.js";
 import OutputView from "./OutputView.js";
+
 export default async function dateINputRetry() {
   let date = null;
   while (date === null) {
@@ -11,4 +12,5 @@ export default async function dateINputRetry() {
       OutputView.printError(error);
     }
   }
+  return date;
 }

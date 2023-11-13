@@ -1,12 +1,10 @@
 import dateInputRetry from "./dateInputRetry.js";
-import InputView from "./InputView.js";
-import menuVerification from "./menuVerification.js";
+import menuInputRetry from "./menuInputRetry.js";
 
 class App {
   async run() {
-    await dateInputRetry();
-    const menu = await InputView.MenuInput();
-    menuVerification(menu);
+    const date = await dateInputRetry();
+    const menu = await menuInputRetry();
   }
 }
 

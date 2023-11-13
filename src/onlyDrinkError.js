@@ -5,8 +5,8 @@ export default function onlyDrinkError(menuList) {
     (menu) => !["제로콜라", "레드와인", "샴페인"].includes(menu)
   );
 
-  const filter = onlyDrinkFilter.some((menu) => menuList[menu] > 0);
+  const onlyDrink = onlyDrinkFilter.some((menu) => menuList[menu] > 0);
 
-  if (!filter)
+  if (!onlyDrink)
     throw new Error("[ERROR] 유효하지 않은 주문입니다. 다시 입력해 주세요.");
 }
