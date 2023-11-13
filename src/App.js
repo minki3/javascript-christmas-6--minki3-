@@ -5,6 +5,7 @@ class App {
   async run() {
     const date = await InputView.DateInput();
     dateInputVerification(date);
+    const menue = await InputView.MenuInput();
   }
 }
 

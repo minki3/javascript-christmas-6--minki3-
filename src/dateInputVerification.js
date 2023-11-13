@@ -1,5 +1,6 @@
 export default function dateInputVerification(date) {
   const numberDate = Number(date);
+  console.log(typeof date);
 
   if (isNaN(numberDate)) {
     throw new Error("[ERROR] : 숫자를 입력해주세요");
