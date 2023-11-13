@@ -23,7 +23,7 @@ class App {
     console.log(christmasEvent(date, regularPriceResult));
     console.log(weekDayEvent(date, regularPriceResult, menu));
     console.log(weekendEvent(date, regularPriceResult, menu));
-    console.log();
+    console.log(specialEvent(date, regularPriceResult));
   }
 }
 
