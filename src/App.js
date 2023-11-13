@@ -1,7 +1,7 @@
 import InputView from "./InputView.js";
 class App {
   async run() {
-    console.log(await InputView.readDate());
+    console.log(await InputView.DateInput());
     // await inputView.readDate();
   }
 }
