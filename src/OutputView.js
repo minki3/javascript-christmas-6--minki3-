@@ -7,5 +7,8 @@ const OutputView = {
   printError(error) {
     Console.print(`${error}`);
   },
+  printMenuDetail(menu, quantity) {
+    Console.print(`${menu} ${quantity}개`);
+  },
 };
 export default OutputView;
