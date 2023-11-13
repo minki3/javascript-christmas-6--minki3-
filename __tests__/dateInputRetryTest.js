@@ -14,6 +14,9 @@ jest.mock("../src/OutputView.js", () => ({
 }));
 
 describe("날짜 잘못 입력시 함수 input 호출 테스트", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
   it("호출 테스트", async () => {
     InputView.DateInput.mockReturnValueOnce("invalid date").mockReturnValueOnce(
       10
