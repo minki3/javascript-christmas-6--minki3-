@@ -63,12 +63,3 @@ const app = new App();
 app.run();
 
 export default App;
-
-// console.log(christmasEventResult);
-// console.log(weekDayEventResult);
-// console.log(weekendEventResult);
-// console.log(specialEventResult);
-// console.log(christmasEvent(date, regularPriceResult));
-// console.log(weekDayEvent(date, regularPriceResult, menu));
-// console.log(weekendEvent(date, regularPriceResult, menu));
-// console.log(specialEvent(date, regularPriceResult));
