@@ -1,4 +1,4 @@
-import dateInputVerification from "./DateInputVerification.js";
+import dateInputVerification from "./dateInputVerification.js";
 import InputView from "./InputView.js";
 import OutputView from "./OutputView.js";
 
